@@ -2,7 +2,7 @@ FROM alpine:latest
 
 RUN apk update
 RUN apk add redis \
-  && rm -rf /var/cache/apk/*
+  && rm -rf /var/cache/apk/* /tmp/* /var/tmp/*
 
-ENTRYPOINT ["redis-cli", "-n", "0", "-h"]
-# CMD ["localhost", "flushdb"]
+ENTRYPOINT ["redis-cli"]
+# CMD ["-n", "0", "-h", "localhost", "flushdb"]
