@@ -10,12 +10,12 @@ An easy and dirty way to flush a specific or all Redis database(s), using docker
 Clone this repo and build it:
 
 ```
-$ git clone git@github.com:pocket-playlab/redis-flusher.git
+$ git clone https://github.com/pocket-playlab/redis-flusher.git
 $ cd redis-flusher/
 $ docker build -t redis-flusher .
 ```
 
-Optional: before building the docker image you can customize the Dockerfile by specifying parameters (arguments) to `redis-cli`. By default the `[CMD]` in the dockerfile is commented. Specifying arguments (uncommenting CMD), you will just have to run the container with no arguments:
+Optional: before building the docker image, you can customize the Dockerfile by specifying parameters (arguments) to `redis-cli`. By default the `[CMD]` in the dockerfile is commented. Specifying arguments (uncommenting CMD), you will just have to run the container with no arguments:
 
 `$ docker run --rm --name flusher redis-flusher`
 
