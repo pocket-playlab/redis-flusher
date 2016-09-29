@@ -1,0 +1,6 @@
+README.md
+Dockerfile
+circle.yml
+.travis.yml
+.git/*
+
